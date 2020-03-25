@@ -34,7 +34,7 @@ Raiz
   |- Exercicios
     |- Exercicio 1
       |- readme.md (questôes)
-        |- SeuNickGitHub (pasta com o seu nick)
+      |- SeuNickGitHub (pasta com o seu nick)
           |- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)
 ```          
 Fonte: https://gitlab.com/rVenson/linguagemdeprogramacao/-/wikis/Git/%5BExerc%C3%ADcios%5D-Git
