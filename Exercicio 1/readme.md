@@ -29,9 +29,9 @@ Clone este Repositório.<br/>
 Para realizar os exercícios e postar suas respostas, clone o repositório, crie dentro da pasta do exercício 1 uma pasta com seu nick do github, se divirta resolvendo os problemas e depois envie usando o GIT.
 
 Estrutura
-Raiz
-  |- Exercicios
-    |- Exercicio 1
-        |- readme.md (questôes)
-        |- SeuNickGitHub (pasta com o seu nick)
-           |- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)
+&nbspRaiz<br/>
+&nbsp&nbsp&nbsp|- Exercicios<br/>
+&nbsp&nbsp&nbsp&nbsp|- Exercicio 1<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp|- readme.md (questôes)<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|- SeuNickGitHub (pasta com o seu nick)<br/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)
