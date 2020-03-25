@@ -30,10 +30,10 @@ Para realizar os exercícios e postar suas respostas, clone o repositório, crie
 
 Estrutura<br/>
 ```
-Raiz<br/>
-  |- Exercicios<br/>
-    |- Exercicio 1<br/>
-      |- readme.md (questôes)<br/>
-        |- SeuNickGitHub (pasta com o seu nick)<br/>
+Raiz
+  |- Exercicios
+    |- Exercicio 1
+      |- readme.md (questôes)
+        |- SeuNickGitHub (pasta com o seu nick)
           |- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)
 ```          
