@@ -1,4 +1,4 @@
-#Exercício Semana 1
+<h2>Exercício Semana 1</h2>
 
 1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
 
@@ -6,32 +6,32 @@
 
 3. Identifique a finalidade dos seguintes comandos:
 
-a. git init
-b. git config --global user.name "turing"
-c. git add EXERCICIO.txt
-d. git add .
-e. git commit -m "Adicionado nova interface"
-f. git commit
-g. git reset --hard HEAD
-h. cd Downloads
-i. pwd
-j. cd ..
-k. ls
-l. git pull
-m. git push
-n. git clone https://github.com/wiecodepython/Exercicios.git
-o. git diff
-p. git show
+a. git init<br/>
+b. git config --global user.name "turing"<br/>
+c. git add EXERCICIO.txt<br/>
+d. git add .<br/>
+e. git commit -m "Adicionado nova interface"<br/>
+f. git commit<br/>
+g. git reset --hard HEAD<br/>
+h. cd Downloads<br/>
+i. pwd<br/>
+j. cd ..<br/>
+k. ls<br/>
+l. git pull<br/>
+m. git push<br/>
+n. git clone https://github.com/wiecodepython/Exercicios.git<br/>
+o. git diff<br/>
+p. git show<br/>
 
-#Desafio
+<h2>Desafio</h2>
 
-Clone este Repositório.
+Clone este Repositório.<br/>
 Para realizar os exercícios e postar suas respostas, clone o repositório, crie dentro da pasta do exercício 1 uma pasta com seu nick do github, se divirta resolvendo os problemas e depois envie usando o GIT.
 
 Estrutura
-Raiz
-  |- Exercicios
-    |- Exercicio 1
-        |- readme.md (questôes)
-        |- SeuNickGitHub (pasta com o seu nick)
-           |- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)
+Raiz<br/>
+  |- Exercicios<br/>
+    |- Exercicio 1<br/>
+        |- readme.md (questôes)<br/>
+        |- SeuNickGitHub (pasta com o seu nick)<br/>
+           |- [AQUI FICA SEU EXERCICIO] (em um arquivo .txt)<br/>
