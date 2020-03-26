@@ -41,9 +41,7 @@ k. ls  -----------> para mostrar o conteúdo visível dentro do diretório
 l. git pull ---------------> para fazer a sincronização do repositório local com o remoto
 m. git push  ------------>  para enviar as atualizações para o servidor remoto
 n. git clone https://github.com/wiecodepython/Exercicios.git  -------------> comando para baixar o projeto de um ramo específico
-
-
-o. git diff
-p. git show         
+o. git diff  --------------> para exibir todas as diferenças entre sua cópia local e o índice sincronizado
+p. git show ----------> para mostrar os detalhes do commit atual
 
    
