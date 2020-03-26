@@ -16,7 +16,34 @@
     meu primeiro commit
  
 
-2 - 
-         
+2 - Após a clonagem, o ultimo commit:  
+
+     commit dbddecdac7637657fc16e2435967506fdf521040 (HEAD -> master, origin/master, origin/HEAD)
+   Author: Wie Code UFPA <62363219+wiecodepython@users.noreply.github.com>
+   Date:   Wed Mar 25 18:01:19 2020 -0300
+
+    Update readme.md
+ 
+
+3 - comandos e pra que serve:
+
+a. git init  ------> para criar repositório local
+b. git config --global user.name "turing" ---------> comando pra configurar a sua "identidade" nos projetos
+c. git add EXERCICIO.txt  --------> irá adicionar o arquivo especificado
+d. git add . ---------> irá adicionar as modificações em todos os arquivos
+e. git commit -m "Adicionado nova interface" ------>  adicina uma mensagem no commit
+f. git commit ------> consolida todos os arquivos 
+g. git reset --hard HEAD  ------------> irá descartar todas as alterações recentes
+h. cd Downloads -------> comando para entrar no diretório referido
+i. pwd ----------------> mostra o diretório onde se está
+j. cd ..  ----------------> faz sair do diretório onde se está
+k. ls  -----------> para mostrar o conteúdo visível dentro do diretório 
+l. git pull ---------------> para fazer a sincronização do repositório local com o remoto
+m. git push  ------------>  para enviar as atualizações para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git  -------------> comando para baixar o projeto de um ramo específico
+
+
+o. git diff
+p. git show         
 
    
