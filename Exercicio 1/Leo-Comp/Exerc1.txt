@@ -1,0 +1,22 @@
+1 - Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+    Criação do repositório:  root@Silva:/home/leonardo/reposit# git init
+    log dos commits :
+
+    commit 62ae2e645076d31ab15bf35ecbde843565ba1b01 (HEAD -> master)
+    Author: Silva <leoifpa555@gmail.com>
+    Date:   Thu Mar 26 12:09:51 2020 -0300
+
+    meu primeiro commit
+
+    commit d1d7fa255111a37935edba5b34c2d2d7651163b2 (origin/master)
+    Author: Silva <leoifpa555@gmail.com>
+    Date:   Thu Mar 26 10:37:56 2020 -0300
+
+    meu primeiro commit
+ 
+
+2 - 
+         
+
+   
