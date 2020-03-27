@@ -1,0 +1,49 @@
+1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+C:\Users\H1\git>git init
+
+C:\Users\H1\git>git log
+
+commit 5b4112619581332251ffcd9dae553feda9aaf681
+Author: Rafael <newconnect7@hotmail.com>
+Date:   Fri Mar 27 01:54:01 2020 -0300
+
+    meu segundo commit
+
+commit cf31a6df9c0227c81507f89d62f35a9ed61edb3f
+Author: Rafael <newconnect7@hotmail.com>
+Date:   Fri Mar 27 01:30:23 2020 -0300
+
+    meu primeiro commit
+2. Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+C:\Users\H1\Exercicios>git init
+
+C:\Users\H1\Exercicios>git log
+commit c5bfe3d623b2dfd1103bb4f329078c24706a028d (HEAD -> master, origin/master, origin/HEAD)
+Merge: d04183a 05fc0b5
+Author: Wie Code UFPA <62363219+wiecodepython@users.noreply.github.com>
+Date:   Thu Mar 26 22:10:57 2020 -0300
+
+    Merge pull request #2 from Leo-Comp/master
+
+    Exerc<C3><AD>cio Semanal 1 - Resposta
+
+3. Identifique a finalidade dos seguintes comandos:
+
+a. git init<br/> : Cria um repositório local.
+b. git config --global user.name "turing"<br/> : Define o seu nome de usuário no projeto.
+c. git add EXERCICIO.txt<br/> : Adiciona o arquivo na área de staged
+d. git add .<br/> : Adiciona as modificações.
+e. git commit -m "Adicionado nova interface"<br/> : Consolida todos os arquivos e adiciona uma mensagem.
+f. git commit<br/> : Apenas consolida os arquivos.
+g. git reset --hard HEAD<br/> : Desfaz o commit e todas as alteraões.
+h. cd Downloads<br/> : Vai para a pasta "Downloads".
+i. pwd<br/> : Mostra o diretório atual.
+j. cd ..<br/> : Retorna ao diretório de origem.
+k. ls<br/> : Mostra todo o conteúdo disponível no diretório.
+l. git pull<br/> : Sincroniza os arquivos do repositório local com o remoto.
+m. git push<br/> : Envia atualizações para o servidor remoto.
+n. git clone https://github.com/wiecodepython/Exercicios.git<br/> : Baixa um projeto do link desejado.
+o. git diff<br/> : Mostra as diferenças entre o repositório local e o remoto.
+p. git show<br/> : Exibe os detalhes do commit atual.
