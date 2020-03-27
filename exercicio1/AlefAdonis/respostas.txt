@@ -1,0 +1,22 @@
+01.Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+Feito
+02.Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+Feito
+03.Identifique a finalidade dos seguintes comandos:
+
+a. git init: inicia um novo repositório
+b. git config --global user.name "turing": configura seu git com o seu nome de usuário 
+c. git add EXERCICIO.txt adiciona um arquivo chamado EXERCICIO
+d. git add . adiciona no arquivo 
+e. git commit -m "Adicionado nova interface": cria uma 'atualização' ou uma alteração no código ou arquivo original com uma mensagem 
+f. git commit: cria uma 'atualização' ou uma alteração no código ou arquivo original sem alterá-lo
+g. git reset --hard HEAD: reseta todos os commits 
+h. cd Downloads: abre a pasta Downloads
+i. pwd: mostra em que diretorios voce se encontra
+j. cd ..: volta ao diretório anterior
+k. ls: lista tudo que existe dentro do arquivo, exceto o que está oculto, pra isso tem que dar ls-la
+l. git pull: sincroniza o repositório remotamente
+m. git push: envia as atualizações para o sevidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git: baixa o projeto do repositório
+o. git diff: Exibe todas as diferenças entre sua cópia local e o índice sincronizado
+p. git show: mostra o HEAD commit. 
