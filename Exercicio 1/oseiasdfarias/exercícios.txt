@@ -1,0 +1,55 @@
+1 - Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+	REPOSITÓRIO CRIADO:
+
+		Oséias-Farias@OseiasFarias MINGW64 ~/GIT_Repositório
+		$ git init
+		Initialized empty Git repository in C:/Users/Oséias-Farias/GIT_Repositório/.git/
+
+	COMMITS REALIZADOS:
+	
+		$ git log
+		commit e465acafb52e1a2d22b7bf3f40be895d41110bb0 (HEAD -> master)
+		Author: oseiasdfarias <oseias.dfarias@gmail.com>
+		Date:   Sat Mar 28 14:06:10 2020 -0300
+
+    			readme.md
+
+		commit c7b792dc96eca80b7162e7d0968db6b607c2ca09
+		Author: oseiasdfarias <oseias.dfarias@gmail.com>
+		Date:   Sat Mar 28 14:05:33 2020 -0300
+
+    			Projeto X.txt
+
+ 
+
+2 - Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, 
+identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+	Clonagem realizada
+		
+		commit e1cfad6dfd5aaebba15d1d85c696b4903931324b (HEAD -> master, origin/master, origin/HEAD)
+		Author: wiecodepython <wiecodepython@gmail.com>
+		Date:   Wed Mar 25 19:29:19 2020 -0300
+
+    			Apostila #1
+
+
+3 - comandos e pra que serve:
+
+a. git init: Usado para criar repositório local
+b. git config --global user.name "turing": Esse comando é usado pra configurar a sua "identidade" nos projetos
+c. git add EXERCICIO.txt:Usado para adicionar um arquivo especificado
+d. git add . : Usado para aplicar modificações em todos os arquivos
+e. git commit -m "Adicionado nova interface" :Usado para adicinar uma mensagem no commit
+f. git commit: Usado para consolidar todos os arquivos 
+g. git reset --hard HEAD : Usado para descartar todas as alterações recentes
+h. cd Downloads: Usado para entrar no diretório referido
+i. pwd : Usado para mostrar o diretório
+j. cd .. : Usado para sair do diretório
+k. ls : Usado para mostrar o conteúdo visível dentro do diretório 
+l. git pull : Usado para fazer a sincronização do repositório local com o remoto
+m. git push : Usado para atualizar o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git : usado para clonar um ramo específico e baixar-lo
+o. git diff : Usado para edentificar as diferenças entre sua cópia local e o índice sincronizado
+p. git show : Usado para mostrar os detalhes do commit usado atualamente
