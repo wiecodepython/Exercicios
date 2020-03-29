@@ -1,0 +1,82 @@
+<h2>Exercício Semana 1</h2>
+
+1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+C:\Users\55839>mkdir novorepositorio
+C:\Users\55839>cd novorepositorio
+C:\Users\55839\novorepositorio>git init
+Initialized empty Git repository in C:/Users/55839/novorepositorio/.git/
+C:\Users\55839\novorepositorio>dir > teste.md
+C:\Users\55839\novorepositorio>git add teste.md
+C:\Users\55839\novorepositorio>git commit -m teste
+[master (root-commit) 76c86b9] teste
+ 1 file changed, 10 insertions(+)
+ create mode 100644 teste.md
+C:\Users\55839\novorepositorio>dir > oi.md
+C:\Users\55839\novorepositorio>git add oi.md
+C:\Users\55839\novorepositorio>git commit -m segundo
+[master 2a1da48] segundo
+ 1 file changed, 11 insertions(+)
+ create mode 100644 oi.md
+C:\Users\55839\novorepositorio>git log
+commit 2a1da48d94ce6675633ee29fede748e27b8858d3 (HEAD -> master)
+Author: yasminmota23 <yasminmota23@hotmail.com>
+Date:   Sat Mar 28 22:48:24 2020 -0300
+
+    segundo
+
+commit 76c86b9f88204753b9a5cb02f279a62ad24df0c7
+Author: yasminmota23 <yasminmota23@hotmail.com>
+Date:   Sat Mar 28 22:46:25 2020 -0300
+
+    teste
+
+2. Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+55839@DESKTOP-GL2902A MINGW64 /d/55839/Documents/EE/P7/GITHUB/clone 2
+$ git clone https://github.com/nytimes/covid-19-data.git
+Cloning into 'covid-19-data'...
+remote: Enumerating objects: 24, done.
+remote: Total 24 (delta 0), reused 0 (delta 0), pack-reused 24
+Receiving objects: 100% (24/24), 155.36 KiB | 438.00 KiB/s, done.
+Resolving deltas: 100% (10/10), done.
+55839@DESKTOP-GL2902A MINGW64 /d/55839/Documents/EE/P7/GITHUB/clone 2
+$ cd covid-19-data
+
+55839@DESKTOP-GL2902A MINGW64 /d/55839/Documents/EE/P7/GITHUB/clone 2/covid-19-data (master)
+$ git log
+commit 6cb66d9a821ce8225f6f9ffcb77ce6db9889c14c (HEAD -> master, origin/master, origin/HEAD)
+Author: Albert Sun <Albert.Sun@nytimes.com>
+Date:   Sat Mar 28 14:39:22 2020 -0400
+
+    New data for 3/27. Revises data for 43 MS counties that erroneously reported 1 death on 3/26. Revises number of cases for Alaska on 3/26. Removes 'Dukes and Nantucket' as a geography.
+
+commit c52fc824a279b73d1dca78606077d26f682529d8
+Author: Albert Sun <Albert.Sun@nytimes.com>
+Date:   Sat Mar 28 14:39:13 2020 -0400
+
+    Update README.md to clarify FIPS codes and how to download raw CSV files.
+
+commit 403c289d700f2247b57a0caa02eb259078e59291
+Author: Albert Sun <Albert.Sun@nytimes.com>                                  // autor
+Date:   Fri Mar 27 21:29:01 2020 -0400						// linguagem utilizada: MarkDown
+
+    New data for 3/26. Revisions to some cases and deaths numbers from 3/23 through 3/25. Adding some missing FIPS codes and removing some non-standard FIPS codes.
+
+3. Identifique a finalidade dos seguintes comandos:
+
+a. git init<br/> R: cria um novo repositório local Git
+b. git config --global user.name "turing"<br/> R:seta o nome do usuário
+c. git add EXERCICIO.txt<br/> R: adiciona o arquivo específico na área staged
+d. git add .<br/> R: adiciona todos os arquivos na área staged
+e. git commit -m "Adicionado nova interface"<br/> R: comita informando mensagem
+f. git commit<br/> R: comita todos os arquivos
+g. git reset --hard HEAD<br/> R: descarta os commits e também as alterações
+i. pwd<br/> R: é utilizado para se localizar no sistema, mostra o diretório atual
+j. cd ..<br/> R: usado para sair do diretório atual para o anterior
+k. ls<br/> R: lista o conteúdo de um diretório
+l. git pull<br/> R: sincroniza o repositório local com o remoto
+m. git push<br/> R: envia as atualizações para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git<br/> R:baixa o projeto do repositório
+o. git diff<br/> R:  é uma função que recebe dois conjuntos de dados de entrada e gera as alterações entre eles
+p. git show<br/> R:  comando usado para exibir detalhes expandidos em objetos Git e commits
