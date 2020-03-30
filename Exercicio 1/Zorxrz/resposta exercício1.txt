@@ -1,0 +1,63 @@
+1.Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+C:\Users\Alicia Maia\teste1>git init
+Initialized empty Git repository in C:/Users/Alicia Maia/teste1/.git/
+
+C:\Users\Alicia Maia\teste1>git log
+commit 47e84121dd1e760c2566210eff3f613f4cf3a627 (HEAD -> master)
+Author: Zorxrz <aliciaengcomp@gmail.com>
+Date:   Sat Mar 28 12:44:01 2020 -0300
+
+    teste2
+
+commit 50a46f876d60f5f92d60b7ad2292b5d953f05b2e
+Author: Zorxrz <aliciaengcomp@gmail.com>
+Date:   Sat Mar 28 12:39:01 2020 -0300
+
+    teste1
+
+
+
+
+
+2.Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+$ git clone https://github.com/Zorxrz/Python.git
+Cloning into 'Python'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7325 (delta 4), reused 8 (delta 4), pack-reused 7315
+Receiving objects: 100% (7325/7325), 9.47 MiB | 3.34 MiB/s, done.
+Resolving deltas: 100% (4074/4074), done.
+
+$ git log
+commit f17e9822b08a0b1d811d1a638f3de1ac26c511d8 (HEAD -> master, origin/master, origin/HEAD)
+Author: Christian Clauss <cclauss@me.com>
+Date:   Sat Mar 28 07:24:59 2020 +0100
+
+    psf/black changes to next_greater_element.py (#1817)
+
+    * psf/black changes to next_greater_element.py
+
+    * fixup! Format Python code with psf/black push
+
+    Co-authored-by: github-actions <${GITHUB_ACTOR}@users.noreply.github.com>
+
+3.Identifique a finalidade dos seguintes comandos:
+
+a. git init -->serve para a criação de repositorio local
+b. git config --global user.name "turing"--> serve para definir o nome de usuário no projeto
+c. git add EXERCICIO.txt-->serve para adicionar o arquivo determinado
+d. git add .-->serve para adicionar modificações nos arquivos
+e. git commit -m "Adicionado nova interface"-->adiciona uma mensagem no commit
+f. git commit-->consolidção de arquivos
+g. git reset --hard HEAD--> desfaz alterções realizadas
+h. cd Downloads--> entra na pasta designada
+i. pwd- -->exibe o diretório presente
+j. cd .. -->saida do diretório atual voltando para o de origem
+k. ls --->exibiçao do coteúdo à disposição no diretório
+l. git pull -->sicronização entre os repositórios local e remoto
+m. git push -->envia atualizções para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git -->baixa um projeto do link referido
+o. git diff -->exibe as diferenças existente entre os repositórios local e remoto
+p. git show -->expor os detalhes do commit atual
