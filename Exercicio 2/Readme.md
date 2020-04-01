@@ -19,4 +19,6 @@ Nota: Um mês tem quatro semanas.
 $$
 x=\frac{100 − 413 · (20 − 5 × 4)}{5}
 $$
-
+$$
+x=\frac{-b \pm \sqrt{bˆ2-4ac}}{2a}
+$$
