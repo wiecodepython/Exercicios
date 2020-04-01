@@ -1,4 +1,4 @@
-#Exercícios
+<h2>Exercícios</h2>
 
 1. Faça todos os exemplos da apostila da "Semana #2".
 
@@ -15,6 +15,6 @@ Nota: Um mês tem quatro semanas.
 6. 2. Se você correr 65 quilômetros em 3 horas, 23 minutos e 17 segundos, qual é a sua velocidade média em m/s?
 
 
-#Desafios
+<h2>Desafios</h2>
 
 Os desafios estão no arquivo "Desafios" na pasta Exercicio 2.
