@@ -16,6 +16,6 @@ Nota: Um mês tem quatro semanas.
 
 7. Resolva essa expressão:
 
-\frac{100 − 413 · (20 − 5 × 4)}{5}
+x=\frac{100 − 413 · (20 − 5 × 4)}{5}
 
 
