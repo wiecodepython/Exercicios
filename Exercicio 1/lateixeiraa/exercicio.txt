@@ -1,6 +1,18 @@
-Curso de GIT -WIE
+Curso de GIT - WIE
+Primeiro exercicio
 
-Questão 3.
+Questão 1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+Cria um repositorio no git ( pela interface)
+Copia o endereço
+No terminal, git clone <endereço>
+Entra na pasta, fazer algumas alterações
+git status
+git add <arquivo>
+git commit -m “comentario”
+git push
+
+Questão 3
 
 a. git init
 	cria um repositorio
