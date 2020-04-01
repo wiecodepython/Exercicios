@@ -12,6 +12,29 @@ git add <arquivo>
 git commit -m “comentario”
 git push
 
+Questão 2.
+
+larissa@larissa-Vostro-5470:~$ git clone https://github.com/lateixeiraa/VSSS.git
+Cloning into 'VSSS'...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 1485 (delta 13), reused 13 (delta 4), pack-reused 1459
+Receiving objects: 100% (1485/1485), 28.43 MiB | 2.29 MiB/s, done.
+Resolving deltas: 100% (551/551), done.
+larissa@larissa-Vostro-5470:~$ cd VSSS
+larissa@larissa-Vostro-5470:~/VSSS$ ls
+ jogadores   referencias  'Sistema de Calibração - UFCG'
+ README.md   simulador    'Sistema de Visão'
+larissa@larissa-Vostro-5470:~/VSSS$ git log
+commit b2ba7a0fb9d095200583406d863e626978d7e6d0 (HEAD -> master, origin/master, origin/HEAD)
+Merge: d64c0cd 31851e2
+Author: Lyang Medeiros <lyang.mdrs@gmail.com>
+Date:   Tue Feb 4 20:00:26 2020 -0300
+
+
+    Merge branch 'gdrive2'
+
 Questão 3
 
 a. git init
