@@ -1,0 +1,38 @@
+Curso de GIT -WIE
+
+Questão 3.
+
+a. git init
+	cria um repositorio
+b. git config --global user.name "turing"
+	configura o seu nome
+c. git add EXERCICIO.txt
+	adiciona o arquivo EXERCICIO.txt
+d. git add .
+	adiciona todas a s modificações
+e. git commit -m "Adicionado nova interface"
+	comita o arquivo com uma mensagem clara
+f. git commit
+	consolida todos os arquivos
+g. git reset --hard HEAD
+	desfaz os commits e as alterações
+h. cd Downloads
+	abre Downloads
+i. pwd
+	mostra sua localização
+j. cd ..
+	volta a pasta anterior
+k. ls
+	lista o que tem na pasta
+l. git pull
+	sincroniza o repositorio local com o repositorio remoto
+m. git push
+	envia as atualizações para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git
+	baixa o projeto doo repositorio
+o. git diff
+	visualizar as alterações que ainda vão para o commit
+p. git show
+	mostra os detalhes do commit atual 
+:wq
+
