@@ -1,0 +1,55 @@
+1 - Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+REPOSITORIO CRIADO
+victor@Laboratorio:~$ cd Origem
+victor@Laboratorio:~/Origem$ git init
+Reinitialized existing Git repository in /home/victor/Origem/.git/
+
+Log dos COMMITS realizados
+victor@Laboratorio:~/Origem$ git log
+commit 5bc356424c0b827b0658a874852af7d7f1b11393 (HEAD -> master, origin/master, origin/HEAD)
+Author: Victor-Cardoso <joao26cardoso@gmail.com>
+Date:   Mon Mar 30 22:03:17 2020 -0300
+
+    Utilizei o edito vi
+
+commit 66cc28fafb8fe6d6f9ff4a62deccc5f6462df91a
+Author: Victor-Cardoso <joao26cardoso@gmail.com>
+Date:   Mon Mar 30 20:55:04 2020 -0300
+
+    Aprendendo Git
+
+commit 8fef15d4ed073efcfd9df384756cfe997971b35a
+Author: Victor-Cardoso <joao26cardoso@gmail.com>
+Date:   Fri Mar 27 17:27:44 2020 -0300
+
+    primeira alteração
+
+2 - Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto ea (s) linguagem (s) utilizada (s).
+
+commit 0292ee4259edbc672822500aa1bcdd083a52c0ca (HEAD -> master, origin/master, origin/HEAD)
+Merge: b11bd48 729f6fb
+Author: Wie Code UFPA <62363219+wiecodepython@users.noreply.github.com>
+Date:   Tue Mar 31 00:00:29 2020 -0300
+
+    Merge pull request #13 from mayalves/master
+
+
+3 - comandos
+
+a. git init ------> para criar repositório local
+b. git config --global user.name "turing" ---------> comando para configurar a sua "identidade" nos projetos
+c. git add EXERCICIO.txt --------> irá adicionar ou especificar o arquivo
+d. git add. ---------> adicionar como alterações em todos os arquivos
+e. git commit -m "Adicionado nova interface" ------> adicina uma mensagem no commit
+f. git commit ------> consolida todos os arquivos
+g. git reset --hard HEAD ------------> irá descartar todas as alterações recentes
+h. Downloads de CD -------> comando para entrar no diretório referido
+i. pwd ----------------> mostra o diretório onde está está
+j. cd .. ----------------> faz sair do diretório onde está está
+k. ls -----------> para mostrar o conteúdo visível dentro do diretório
+l. git pull ---------------> para fazer uma sincronização do repositório local com o controle remoto
+m. git push ------------> para enviar como atualizações para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git -------------> comando para baixar o projeto de um ramo específico
+o. git diff --------------> para exibir todas as diferenças entre sua cópia local e o índice sincronizado
+p. git show ----------> para mostrar os detalhes do commit atual
