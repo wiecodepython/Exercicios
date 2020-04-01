@@ -1,0 +1,136 @@
+Exercício Semana 1
+1 - Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~
+$ mkdir semana1
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~
+$ cd semana1
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1
+$ git init
+Initialized empty Git repository in C:/Users/Marina/semana1/.git/
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ dir > exer1.md
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git add exer1.md
+warning: LF will be replaced by CRLF in exer1.md.
+The file will have its original line endings in your working directory
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   exer1.md
+
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git commit -m "questao 1"
+[master (root-commit) 77fcb6b] questao 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 exer1.md
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git add EXERCICIO1.md
+warning: LF will be replaced by CRLF in EXERCICIO1.md.
+The file will have its original line endings in your working directory
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   EXERCICIO1.md
+
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git commit-m "respostas"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/semana1 (master)
+$ git log
+commit 77fcb6b798b181e6765d918db865732dbd5d5a6b (HEAD -> master)
+Author: Marina Batista <marina.batista@ee.ufcg.edu.br>
+Date:   Wed Apr 1 18:22:05 2020 -0300
+
+    questao 1
+
+
+2 - Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/Pictures/git/curso wie/2
+$ git clone https://github.com/maarinaabatista/cortex-docs.git
+Cloning into 'cortex-docs'...
+remote: Enumerating objects: 429, done.
+remote: Total 429 (delta 0), reused 0 (delta 0), pack-reused 429
+Receiving objects: 100% (429/429), 317.76 KiB | 817.00 KiB/s, done.
+Resolving deltas: 100% (269/269), done.
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/Pictures/git/curso wie/2
+$ git cd cortex-docs
+git: 'cd' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/Pictures/git/curso wie/2
+$ cd cortex-docs
+
+Marina@DESKTOP-9GU6BK8 MINGW64 ~/Pictures/git/curso wie/2/cortex-docs (gh-pages)
+$ git log
+commit 5bc35c93bf4454102109c7df26bace4dbeb71d8c (HEAD -> gh-pages, origin/gh-pages, origin/HEAD)
+Author: Patrick <patdotme@users.noreply.github.com>
+Date:   Mon Jan 6 16:38:15 2020 +0700
+
+    Create README.md
+
+commit 07791eeeb34b2b54c272053a5cc1a11531b3d14e
+Author: Patrick Chu <patrick@emotiv.com>
+Date:   Tue Aug 21 17:44:45 2018 +0800
+
+    publish: Merge pull request #2 from nguoithichkhampha/master
+
+    generated from commit 88f23e07402d298ab8dcdd605f7852e3be1378c9
+
+commit 67d05a86ab7feee8cc3f9cabbfbb23dd53cd4741
+Author: Patrick Chu <patrick@emotiv.com>
+Date:   Mon Jun 11 21:38:43 2018 +0800
+
+    publish: Update error code description.
+
+    generated from commit 505f201144f2f7f72073f423b3c56845c98ca917
+
+:
+linguagem utilizada :  HTML 96,1 % SHELL 3,9%
+
+
+
+3 - Identifique a finalidade dos seguintes comandos:
+
+a. git init = comando do GIT para criar um repositório
+b. git config --global user.name "turing" - adiciona um nome de usuário "turing"
+c. git add EXERCICIO.txt - adiciona o arquivo EXERCICIO.txt
+d. git add . - adiciona todos os arquivos
+e. git commit -m "Adicionado nova interface" - comitar o arquivo de mensagem 
+f. git commit - consolidar todos os arquivos
+g. git reset --hard HEAD - desfaz uma alteração local
+h. cd Downloads - acessar pasta Downloads
+i. pwd - mostra o diretorio atual
+j. cd ..- sai do direório atual para o anterior
+k. ls - lista todos os conteúdos de um diretório
+l. git pull - Atualiza os arquivos no branch atual
+m. git push - Enviar arquivos/diretórios para o repositório remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git - clona um diretorio 
+o. git diff - O comando git diff possui parâmetros que lhe permitem comparar versões incluindo referências por commit, branches, tags
+p. git show - Mostra vários tipos de objetos
