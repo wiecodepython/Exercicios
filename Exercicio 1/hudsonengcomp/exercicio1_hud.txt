@@ -1,0 +1,89 @@
+questão 1
+
+
+hud@INSPIRON-HUD MINGW64 ~
+$ mkdir repositoriolocal
+
+hud@INSPIRON-HUD MINGW64 ~
+$ cd repositoriolocal
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal
+$ git init
+Initialized empty Git repository in C:/Users/hud/repositoriolocal/.git/
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ dir >readme.md
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ git add readme.md
+warning: LF will be replaced by CRLF in readme.md.
+The file will have its original line endings in your working directory
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ git commit -m "meu primeiro commit"
+[master (root-commit) 9ac7b83] meu primeiro commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.md
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ dir > readme1.md
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ git add readme1.md
+warning: LF will be replaced by CRLF in readme1.md.
+The file will have its original line endings in your working directory
+
+hud@INSPIRON-HUD MINGW64 ~/repositoriolocal (master)
+$ git commit -m "meu segundo commit"
+[master 6fc98fe] meu segundo commit
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 readme1.md
+
+
+questão 2
+
+
+hud@INSPIRON-HUD MINGW64 ~/github
+$ git clone https://github.com/hudsonengcomp/Exercicios.git
+Cloning into 'Exercicios'...
+remote: Enumerating objects: 31, done.
+remote: Counting objects: 100% (31/31), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 134 (delta 4), reused 23 (delta 2), pack-reused 103
+Receiving objects: 100% (134/134), 29.31 KiB | 341.00 KiB/s, done.
+Resolving deltas: 100% (20/20), done.
+
+hud@INSPIRON-HUD MINGW64 ~/github/exercicios (master)
+$ git log
+commit 0292ee4259edbc672822500aa1bcdd083a52c0ca (HEAD -> master, origin/master, origin/HEAD)
+Merge: b11bd48 729f6fb
+Author: Wie Code UFPA <62363219+wiecodepython@users.noreply.github.com>
+Date:   Tue Mar 31 00:00:29 2020 -0300
+
+    Merge pull request #13 from mayalves/master
+
+    resposta do exercício 1
+ . . .
+
+
+questão 3
+
+
+a. init : ria/inicializa repositório local.
+b. config --global user.name : define nome de usuário.
+c. add EXERCICIO.txt : adiciona o arquivo para possivel commit
+d. add : adiciona as modificações.
+e. commit -m "Adicionado nova interface" : faz o commit dos arquivos e adiciona a mensagem.
+f. commit : faz o commit dos arquivos.
+g. reset --hard HEAD : desfaz o commit e as alteraões.
+h. cd Downloads : troca de diretório para a pasta "Downloads".
+i. pwd : mostra o diretório atual.
+j. cd .. : troca para o diretório de "pai".
+k. ls : mostra o conteúdo do diretório atual.
+l. pull : sincroniza os arquivos do repositório local a partir do remoto.
+m. push : envia a solicitação de atualizações para o servidor remoto.
+n. clone https://github.com/wiecodepython/Exercicios.git : cria um clone do projeto desejado.
+o. diff : verifica e mostra as diferenças entre o repositório local e o remoto.
+p. show : detalha o commit atual.
+
+
