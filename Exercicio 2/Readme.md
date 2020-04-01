@@ -12,7 +12,7 @@ Nota: Um mês tem quatro semanas.
 
 5. Calcule a área de um círculo de raio r=2.
 
-6. 2. Se você correr 65 quilômetros em 3 horas, 23 minutos e 17 segundos, qual é a sua velocidade média em m/s?
+6. Se você correr 65 quilômetros em 3 horas, 23 minutos e 17 segundos, qual é a sua velocidade média em m/s?
 
 
 <h2>Desafios</h2>
