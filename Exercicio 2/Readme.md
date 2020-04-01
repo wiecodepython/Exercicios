@@ -14,11 +14,7 @@ Nota: Um mês tem quatro semanas.
 
 6. 2. Se você correr 65 quilômetros em 3 horas, 23 minutos e 17 segundos, qual é a sua velocidade média em m/s?
 
-7. Resolva essa expressão:
 
-$$
-x=\frac{100 − 413 · (20 − 5 × 4)}{5}
-$$
-$$
-x=\frac{-b \pm \sqrt{bˆ2-4ac}}{2a}
-$$
+#Desafios
+
+Os desafios estão no arquivo "Desafios" na pasta Exercicio 2.
