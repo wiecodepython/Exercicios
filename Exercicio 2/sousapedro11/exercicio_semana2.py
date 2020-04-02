@@ -41,6 +41,6 @@ print(pi*raio**2)
 # 6. Se você correr 65 quilômetros em 3 horas, 23 minutos e 17 segundos, qual é a sua velocidade média em m/s?
 distancia = 65000 # 65km em m
 tempo = 3*3600 + 23*60 + 17 # 3h23min17s em s.
-print("\n6. velocidade media")
+print("\n6. velocidade media percorrendo 65km em 3h23min17s")
 # print(f"{distancia/tempo:.8f} m/s")
 print(f"{distancia/tempo} m/s")
