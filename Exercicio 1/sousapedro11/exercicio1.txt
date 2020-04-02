@@ -1,25 +1,37 @@
 1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
 
-```sh
-    mkdir wow_helper
-    cd wow_helper
-    git init
-    echo "# WoW Helper" > README.md
-    echo "print('Hello World!')" > main.py
-    git add README.md 
-    git commit -m "add readme"
-    git add main.py
-    git commit -m "add main.py"
-    git remote add origin <url_remote>
-    git push -u origin master
-```
+    # cria diretório
+        mkdir wow_helper
+    # mudar para o diretório wow_helper
+        cd wow_helper
+    # cria um repositório Git vazio
+        git init
+    # cria o arquivo README.md com o conteúdo: # WoW Helper
+        echo "# WoW Helper" > README.md
+    # cria um Hello World em Python no arquivo main.py
+        echo "print('Hello World!')" > main.py
+    # adiciona o arquivo README.md ao índice
+        git add README.md 
+    # registra as mudanças no repositório com a mensagem: add readme
+        git commit -m "add readme"
+    # adiciona o arquivo main.py ao índice
+        git add main.py
+    # registra as mudanças no repositório com a mensagem: add main.py
+        git commit -m "add main.py"
+    # concta o repositório local a um servidor remoto
+        git remote add origin <url_remote>
+    # envia alterações do repositório local ao servidor remoto
+        git push -u origin master
 
 2. Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
 
-```sh
-    git clone https://github.com/TheAlgorithms/Python.git
-    echo `git log -1 --pretty=format:"%an"`
-```
+    # clona o repositório do GitHub
+        git clone https://github.com/TheAlgorithms/Python.git
+    # mostra o nome do autor do último commit
+        echo `git log -1 --pretty=format:"%an"`
+    # corpo da mensagem e arquivo modificado
+        echo `git log -1 --pretty=format:%s` && echo `git log -1 --name-only --pretty=format:%n`
+    A alteração feita no momento que fiz a consulta foi a modificação de um comentário no arquivo rabin_karp.py
 
 3. Identifique a finalidade dos seguintes comandos:
 
@@ -27,12 +39,16 @@ a. git init
     Cria um repositório Git vazio ou reinicializa um existente.
 
 b. git config --global user.name "turing"
+    define o nome do usuário, globalmente
 
 c. git add EXERCICIO.txt
+    adiciona o arquivo EXERCICIO.txt ao índice
 
 d. git add .
+    adiciona todos os arquivos/diretórios ao índice
 
 e. git commit -m "Adicionado nova interface"
+    registra as mudanças no repositório local com a mensagem: Adicionado nova interface
 
 f. git commit
 
