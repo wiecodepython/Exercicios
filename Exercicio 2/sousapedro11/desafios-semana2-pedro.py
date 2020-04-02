@@ -52,8 +52,7 @@ cebola = 5.40
 alho = 30
 pao = 25
 
-total = 75 * cerveja + 2 * macarrao + molho_tomate + \
- 0.42 * cebola + 0.25 * alho + 0.45 * pao
+total = 75 * cerveja + 2 * macarrao + molho_tomate + 0.42 * cebola + 0.25 * alho + 0.45 * pao
 print(f"valor total: R${total}")
 print(f"valor para cada pessoa: R${total/4}")
 
@@ -99,4 +98,4 @@ print(f"volume de cada bolinha: {bola_volume} cm^3")
 print(f"volume calculado do pote: {pote_volume} cm^3")
 print(f"volume ocupavel do pote: {volume_ocupavel_pote} cm^3")
 
-print(f"quantidade de bolinhas de queijo no volume ocupavel: {bola_qtde}")
+print(f"quantidade de bolinhas de queijo que cabem no pote: {bola_qtde}")
