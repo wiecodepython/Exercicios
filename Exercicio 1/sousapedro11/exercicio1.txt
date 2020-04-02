@@ -31,7 +31,7 @@
         echo `git log -1 --pretty=format:"%an"`
     # corpo da mensagem e arquivo modificado
         echo `git log -1 --pretty=format:%s` && echo `git log -1 --name-only --pretty=format:%n`
-    A alteração feita no momento que fiz a consulta foi a modificação de um comentário no arquivo rabin_karp.py
+        A alteração feita no momento que fiz a consulta foi a modificação de um comentário no arquivo rabin_karp.py
 
 3. Identifique a finalidade dos seguintes comandos:
 
@@ -51,23 +51,38 @@ e. git commit -m "Adicionado nova interface"
     registra as mudanças no repositório local com a mensagem: Adicionado nova interface
 
 f. git commit
-
+    registra as mudanças no repositório local abrindo o editor padrão do git a fim de alterações
+    no corpo da mensagem
+    
 g. git reset --hard HEAD
+    o ponteiro HEAD será movido para o commit anterior e o revertendo também as áreas de staged e working para
+    o mesmo estado do commit apontado pelo HEAD
 
 h. cd Downloads
+    muda do diretório corrente para o diretório Downloads
 
 i. pwd
+    mostra o caminho completo do diretório atual
 
 j. cd ..
+    muda do diretório corrente para o diretório pai
 
 k. ls
+    lista informações sobre os arquivos (no diretório corrente por padrão)
 
 l. git pull
+    incorpora mudanças de um repositório remoto para o branch local, ou seja, sincroniza
+    o repositório local com o remoto
 
 m. git push
+    envia as mudanças feitas no repositório local para o servidor remoto
 
 n. git clone https://github.com/wiecodepython/Exercicios.git
+    obtém-se a cópia de um repositório Git existente no servidor remoto, no caso o repositório Exercicios.
+    Ao clonar é criado um diretório contendo uma cópia local do repositório remoto, por padrão da branch master
 
 o. git diff
+    verifica diferenças entre commits, arquivos e árvores de diretórios
 
 p. git show
+    mostra detalhes do commit atual
