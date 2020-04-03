@@ -1,0 +1,73 @@
+Curso de GIT - WIE
+Primeiro exercicio
+
+Questão 1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+Cria um repositorio no git ( pela interface)
+Copia o endereço
+No terminal, git clone <endereço>
+Entra na pasta, fazer algumas alterações
+git status
+git add <arquivo>
+git commit -m “comentario”
+git push
+
+Questão 2.
+
+larissa@larissa-Vostro-5470:~$ git clone https://github.com/lateixeiraa/VSSS.git
+Cloning into 'VSSS'...
+remote: Enumerating objects: 26, done.
+remote: Counting objects: 100% (26/26), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 1485 (delta 13), reused 13 (delta 4), pack-reused 1459
+Receiving objects: 100% (1485/1485), 28.43 MiB | 2.29 MiB/s, done.
+Resolving deltas: 100% (551/551), done.
+larissa@larissa-Vostro-5470:~$ cd VSSS
+larissa@larissa-Vostro-5470:~/VSSS$ ls
+ jogadores   referencias  'Sistema de Calibração - UFCG'
+ README.md   simulador    'Sistema de Visão'
+larissa@larissa-Vostro-5470:~/VSSS$ git log
+commit b2ba7a0fb9d095200583406d863e626978d7e6d0 (HEAD -> master, origin/master, origin/HEAD)
+Merge: d64c0cd 31851e2
+Author: Lyang Medeiros <lyang.mdrs@gmail.com>
+Date:   Tue Feb 4 20:00:26 2020 -0300
+
+
+    Merge branch 'gdrive2'
+
+Questão 3
+
+a. git init
+	cria um repositorio
+b. git config --global user.name "turing"
+	configura o seu nome
+c. git add EXERCICIO.txt
+	adiciona o arquivo EXERCICIO.txt
+d. git add .
+	adiciona todas a s modificações
+e. git commit -m "Adicionado nova interface"
+	comita o arquivo com uma mensagem clara
+f. git commit
+	consolida todos os arquivos
+g. git reset --hard HEAD
+	desfaz os commits e as alterações
+h. cd Downloads
+	abre Downloads
+i. pwd
+	mostra sua localização
+j. cd ..
+	volta a pasta anterior
+k. ls
+	lista o que tem na pasta
+l. git pull
+	sincroniza o repositorio local com o repositorio remoto
+m. git push
+	envia as atualizações para o servidor remoto
+n. git clone https://github.com/wiecodepython/Exercicios.git
+	baixa o projeto doo repositorio
+o. git diff
+	visualizar as alterações que ainda vão para o commit
+p. git show
+	mostra os detalhes do commit atual 
+:wq
+
