@@ -1,0 +1,88 @@
+1. Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+    # cria diretório
+        mkdir wow_helper
+    # mudar para o diretório wow_helper
+        cd wow_helper
+    # cria um repositório Git vazio
+        git init
+    # cria o arquivo README.md com o conteúdo: # WoW Helper
+        echo "# WoW Helper" > README.md
+    # cria um Hello World em Python no arquivo main.py
+        echo "print('Hello World!')" > main.py
+    # adiciona o arquivo README.md ao índice
+        git add README.md 
+    # registra as mudanças no repositório com a mensagem: add readme
+        git commit -m "add readme"
+    # adiciona o arquivo main.py ao índice
+        git add main.py
+    # registra as mudanças no repositório com a mensagem: add main.py
+        git commit -m "add main.py"
+    # concta o repositório local a um servidor remoto
+        git remote add origin <url_remote>
+    # envia alterações do repositório local ao servidor remoto
+        git push -u origin master
+
+2. Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+    # clona o repositório do GitHub
+        git clone https://github.com/TheAlgorithms/Python.git
+    # mostra o nome do autor do último commit
+        echo `git log -1 --pretty=format:"%an"`
+    # corpo da mensagem e arquivo modificado
+        echo `git log -1 --pretty=format:%s` && echo `git log -1 --name-only --pretty=format:%n`
+        A alteração feita no momento que fiz a consulta foi a modificação de um comentário no arquivo rabin_karp.py
+
+3. Identifique a finalidade dos seguintes comandos:
+
+a. git init
+    Cria um repositório Git vazio ou reinicializa um existente.
+
+b. git config --global user.name "turing"
+    define o nome do usuário, globalmente
+
+c. git add EXERCICIO.txt
+    adiciona o arquivo EXERCICIO.txt ao índice
+
+d. git add .
+    adiciona todos os arquivos/diretórios ao índice
+
+e. git commit -m "Adicionado nova interface"
+    registra as mudanças no repositório local com a mensagem: Adicionado nova interface
+
+f. git commit
+    registra as mudanças no repositório local abrindo o editor padrão do git a fim de alterações
+    no corpo da mensagem
+    
+g. git reset --hard HEAD
+    o ponteiro HEAD será movido para o commit anterior e o revertendo também as áreas de staged e working para
+    o mesmo estado do commit apontado pelo HEAD
+
+h. cd Downloads
+    muda do diretório corrente para o diretório Downloads
+
+i. pwd
+    mostra o caminho completo do diretório atual
+
+j. cd ..
+    muda do diretório corrente para o diretório pai
+
+k. ls
+    lista informações sobre os arquivos (no diretório corrente por padrão)
+
+l. git pull
+    incorpora mudanças de um repositório remoto para o branch local, ou seja, sincroniza
+    o repositório local com o remoto
+
+m. git push
+    envia as mudanças feitas no repositório local para o servidor remoto
+
+n. git clone https://github.com/wiecodepython/Exercicios.git
+    obtém-se a cópia de um repositório Git existente no servidor remoto, no caso o repositório Exercicios.
+    Ao clonar é criado um diretório contendo uma cópia local do repositório remoto, por padrão da branch master
+
+o. git diff
+    verifica diferenças entre commits, arquivos e árvores de diretórios
+
+p. git show
+    mostra detalhes do commit atual
