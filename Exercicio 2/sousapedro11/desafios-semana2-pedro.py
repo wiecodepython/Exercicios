@@ -24,11 +24,11 @@ Ou seja:
 Qual é o valor resultante em cada um desses casos?
 """
 print('\n2. tres capacitores de Enivaldo')
-c1 = 10
-c2 = 22
-c3 = 6.8
-print(f"Em paralelo: {c1 + c2 + c3}")
-print(f"Em serie: {1/c1 + 1/c2 + 1/c3}")
+c1 = 10e-6 # em F
+c2 = 22e-6 # em F
+c3 = 6.8e-6 # em F
+print(f"Em paralelo: {format(c1 + c2 + c3, 'e')} F")
+print(f"Em serie: {format(1/c1 + 1/c2 + 1/c3, 'e')} F")
 
 """
 3. Você e os outros integrantes da sua república (Joca, Moacir,
@@ -94,8 +94,8 @@ ja que divisor e dividendo sao do tipo float
 """
 bola_qtde = int(volume_ocupavel_pote/bola_volume)
 
-print(f"volume de cada bolinha: {bola_volume} cm^3")
-print(f"volume calculado do pote: {pote_volume} cm^3")
-print(f"volume ocupavel do pote: {volume_ocupavel_pote} cm^3")
+print(f"volume de cada bolinha: {bola_volume} cm\u00b3")
+print(f"volume calculado do pote: {pote_volume} cm\u00b3")
+print(f"volume ocupavel do pote: {volume_ocupavel_pote} cm\u00b3")
 
 print(f"quantidade de bolinhas de queijo que cabem no pote: {bola_qtde}")
