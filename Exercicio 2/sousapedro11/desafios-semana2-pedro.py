@@ -66,7 +66,7 @@ ideal é 0.74, mas o pote de sorvete tem tamanho comparável às
 bolinhas de queijo, aí tem efeitos de borda, então o fator deve ser
 menor. Mas as bolinhas de queijo são razoavelmente elásticas, então
 empacota mais. Esse valor parece razoável.
-Sabendo que o volume de uma esfera de raio r é ​V = (3/4)*πr^3​, o volume do
+Sabendo que o volume de uma esfera de raio r é ​V = (4/3)*πr^3​, o volume do
 pote de sorvete é V = x*y*z e o fator de empacotamento é a fração de
 volume ocupado pelas bolinhas de queijo. Ou seja, 74% do pote de
 sorvete vai ser ocupado pelas bolinhas de queijo. Ajude a Krissia
@@ -82,7 +82,7 @@ bola_raio = 1.2
 
 fator_empacotamento = 0.74 # adimensional
 
-bola_volume = (3/4)*pi*pow(bola_raio,3) # em cm^3
+bola_volume = (4/3)*pi*pow(bola_raio,3) # em cm^3
 pote_volume = pote_x*pote_y*pote_z # em cm^3
 
 # 74% do volume total do pote
