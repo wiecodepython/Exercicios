@@ -24,11 +24,11 @@ Ou seja:
 Qual é o valor resultante em cada um desses casos?
 """
 print('\n2. tres capacitores de Enivaldo')
-c1 = 10
-c2 = 22
-c3 = 6.8
-print(f"Em paralelo: {c1 + c2 + c3}")
-print(f"Em serie: {1/c1 + 1/c2 + 1/c3}")
+c1 = 10e-6 # em F
+c2 = 22e-6 # em F
+c3 = 6.8e-6 # em F
+print(f"Em paralelo: {format(c1 + c2 + c3, 'e')} F")
+print(f"Em serie: {format(1/c1 + 1/c2 + 1/c3, 'e')} F")
 
 """
 3. Você e os outros integrantes da sua república (Joca, Moacir,
@@ -66,7 +66,7 @@ ideal é 0.74, mas o pote de sorvete tem tamanho comparável às
 bolinhas de queijo, aí tem efeitos de borda, então o fator deve ser
 menor. Mas as bolinhas de queijo são razoavelmente elásticas, então
 empacota mais. Esse valor parece razoável.
-Sabendo que o volume de uma esfera de raio r é ​V = (3/4)*πr^3​, o volume do
+Sabendo que o volume de uma esfera de raio r é ​V = (4/3)*πr^3​, o volume do
 pote de sorvete é V = x*y*z e o fator de empacotamento é a fração de
 volume ocupado pelas bolinhas de queijo. Ou seja, 74% do pote de
 sorvete vai ser ocupado pelas bolinhas de queijo. Ajude a Krissia
@@ -82,7 +82,7 @@ bola_raio = 1.2
 
 fator_empacotamento = 0.74 # adimensional
 
-bola_volume = (3/4)*pi*pow(bola_raio,3) # em cm^3
+bola_volume = (4/3)*pi*pow(bola_raio,3) # em cm^3
 pote_volume = pote_x*pote_y*pote_z # em cm^3
 
 # 74% do volume total do pote
@@ -94,8 +94,8 @@ ja que divisor e dividendo sao do tipo float
 """
 bola_qtde = int(volume_ocupavel_pote/bola_volume)
 
-print(f"volume de cada bolinha: {bola_volume} cm^3")
-print(f"volume calculado do pote: {pote_volume} cm^3")
-print(f"volume ocupavel do pote: {volume_ocupavel_pote} cm^3")
+print(f"volume de cada bolinha: {bola_volume} cm\u00b3")
+print(f"volume calculado do pote: {pote_volume} cm\u00b3")
+print(f"volume ocupavel do pote: {volume_ocupavel_pote} cm\u00b3")
 
 print(f"quantidade de bolinhas de queijo que cabem no pote: {bola_qtde}")
