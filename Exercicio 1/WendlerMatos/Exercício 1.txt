@@ -1,0 +1,122 @@
+01) Crie um novo repositório local com um projeto à sua escolha e realize pelo menos dois commits neste repositório
+
+
+
+C:\Users\Wendler Matos\Documents>mkdir Repositorio1
+
+C:\Users\Wendler Matos\Documents>cd Repositorio1
+
+C:\Users\Wendler Matos\Documents\Repositorio1>git init
+Initialized empty Git repository in C:/Users/Wendler Matos/Documents/Repositorio1/.git/
+
+C:\Users\Wendler Matos\Documents\Repositorio1>dir>readm.md
+
+C:\Users\Wendler Matos\Documents\Repositorio1>git add readm.md
+
+C:\Users\Wendler Matos\Documents\Repositorio1>git commit -m "primeiro commit"
+[master (root-commit) 120814e] primeiro commit
+ 1 file changed, 10 insertions(+)
+ create mode 100644 readm.md
+
+C:\Users\Wendler Matos\Documents\Repositorio1>dir>readm1.md
+
+C:\Users\Wendler Matos\Documents\Repositorio1>git add readm1.md
+
+C:\Users\Wendler Matos\Documents\Repositorio1>git commit -m "segundo commit"
+[master cd47a60] segundo commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 readm1.md
+
+
+
+
+02) Escolha um repositório disponível no GitHub e faça a clonagem do mesmo, identificando qual foi o autor do último commit realizado no projeto e a(s) linguagem(s) utilizadas.
+
+
+Wendler Matos@DESKTOP-GM5GLTR MINGW64 ~/Documents
+$ git clone https://github.com/TheAlgorithms/Python.git
+Cloning into 'Python'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7397 (delta 0), reused 0 (delta 0), pack-reused 7393
+Receiving objects: 100% (7397/7397), 9.39 MiB | 1.46 MiB/s, done.
+Resolving deltas: 100% (4118/4118), done.
+
+
+Wendler Matos@DESKTOP-GM5GLTR MINGW64 ~/Documents/Python (master)
+$ git log
+commit d2e8e6215e81acdc2a7f7d10bdfcbfdf6d25b666 (HEAD -> master, origin/master, origin/HEAD)
+Author: Sanders Lin <45224617+SandersLin@users.noreply.github.com>
+Date:   Thu Apr 16 18:34:14 2020 +0800
+
+    Update g_topological_sort.py (#1873)
+
+
+
+
+03) Identifique a finalidade dos seguintes comandos:
+
+a. git init
+
+CRIA UM NOVO REPOSITÓRIO GIT
+
+b. git config --global user.name "turing"
+
+DEFINE O NOME DO USUÁRIO GIT
+
+c. git add EXERCICIO.txt
+
+ADICIONA ARQUIVOS NO DIRETÓRIO LOCAL, NESSE CASO CRIA UM ARQUIVO CHAMADO "EXERCICIO.txt", OU SEJA, UM ARQUIVO DE TEXTO
+
+d. git add .
+
+ADICIONA TODOS OS ARQUIVOS DEFINIDOS AO MESMO TEMPO
+
+e. git commit -m "Adicionado nova interface"
+
+CONSOLIDA O ARQUIVO, OU SEJA, FINALIZA AS ALTERAÇÕES, O QUE ESTÁ ENTRE "" É UMA FRASE QUE IRÁ APARECER
+
+f. git commit
+
+FINALIZA TODOS OS ARQUIVOS
+
+g. git reset --hard HEAD
+
+DESFAZ OS COMMITIS E AS ALTERAÇÕES
+
+h. cd Downloads
+
+ENTRA NA PASTA Downloads
+
+i. pwd
+
+O COMANDO pwd É PARA LINUX O QUE O COMANDO cd É PARA WINDOWS, MOSTRA O CAMINHO DA LOCALIZAÇÃO DO DIRETÓRIO ATUAL
+
+j. cd ..
+
+RETORNA UM DIRETÓRIO
+
+k. ls
+
+O COMANDO ls É PARA O LINUX O QUE O COMANDO dir É PARA O WINDOWS, MOSTRA O QUE TEM NO DIRETÓRIO
+
+l. git pull
+
+SINCRONIZA O REPOSITÓRIO LOCAL COM O REMOTO
+
+m. git push
+
+ENVIA AS ATUALIZAÇÕES FEITAS PARA O SERVIDOR REMOTO
+
+n. git clone https://github.com/wiecodepython/Exercicios.git
+
+CLONA O REPOSITÓRIO DO LINK
+
+o. git diff
+ 
+MOSTRA AS DIFERENÇAS ENTRE ARQUIVOS
+
+p. git show
+
+VISUALIZA INFORMAÇÕES SOBRE QUALQUER PROJETO GIT
