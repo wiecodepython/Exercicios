@@ -16,9 +16,9 @@ Lembre-se de salvá-las em alguma variável!
     d. Adicione bebidas ao final da listona, mas sem criar uma lista!
    
 3. Utilizando o del, remova todos os elementos da lista criada anteriormente até a lista ficar vazia.
-4. Faça uma lista de compras do mês, não se esqueça de comprar produtos de limpeza e sorvete!
-<p>Agora «vá ao mercado» e delete apenas os produtos de limpeza da lista.</p>
-<p>Agora «vá à sorveteria» e se empanturre de sorvete e tire o sorvete da lista.</p>
+4. Faça uma lista de compras do mês, não se esqueça de comprar produtos de limpeza e sorvete!<br/>
+Agora «vá ao mercado» e delete apenas os produtos de limpeza da lista.<br/>
+Agora «vá à sorveteria» e se empanturre de sorvete e tire o sorvete da lista.<br/>
 5. Dado uma lista de números, faça com que os números sejam ordenados e, em seguida, inverta a ordem da lista
 usando slicing.
 
