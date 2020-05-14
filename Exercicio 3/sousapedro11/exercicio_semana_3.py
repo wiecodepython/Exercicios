@@ -133,16 +133,60 @@ palavra4 = frase[15:-1]
 
 
 palavras = {
-	'palavra 1': palavra1,
-	'palavra 2': palavra2,
-	'palavra 3': palavra3,
-	'palavra 4': palavra4
+    'palavra 1': palavra1,
+    'palavra 2': palavra2,
+    'palavra 3': palavra3,
+    'palavra 4': palavra4
 }
 
 print('PALAVRAS')
 for k, v in palavras.items():
-	print(f'{k} = {v}')
+    print(f'{k} = {v}')
 
+"""
+2 - Qual o tamanho dessa frase? E qual o tamanho de cada palavra?
+"""
+print('\nq2.')
+print(f'Tamanho da frase({frase}) = {len(frase)}')
+for k, v in palavras.items():
+    print(f'Tamanho da {k}({v}) = {len(v)}')
+
+
+"""
+3 - Use slicing (mais especificamente o passo do fatiamento) para
+inverter a string «Python»
+"""
+print('\nq3.')
+palavra = 'Python'
+print(f'Palavra: {palavra}, palavra invertida: {palavra[::-1]}')
 
 
 print('\nLEITURA DO TECLADO')
+print('q1.')
+"""
+1 - Leia um nome pelo teclado e imprima "Olá, <seu nome>!"
+"""
+nome = input('Informe um nome: ')
+print(f'Olá, {nome}!')
+
+"""
+2 - Leia outro nome pelo teclado e imprima:
+<nome lido> roubou o pão na casa do <nome lido 2>!
+<nome lido 2> ficou triste e com fome,
+porque o bandeijão estava fechado.
+"""
+print('\nq2.')
+nome2 = input('Informe outro nome: ')
+
+print(f'{nome} roubou o pão na casa de {nome2}!')
+print(f'{nome2} ficou triste e com fome,\nporque o bandeijão estava fechado.')
+
+
+"""
+3 - Leia uma frase pelo teclado e a imprima ao contrário. Por
+exemplo, se a frase for ​"Manjo muito de Python!​", a saída deverá
+ser ' ​ !nohtyP ed otium ojnaM'​.
+"""
+print('\nq3.')
+frase_lida = input('Digite uma frase: ')
+print(f'frase ao contrário: {frase_lida[::-1]}')
