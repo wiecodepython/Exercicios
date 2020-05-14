@@ -25,11 +25,34 @@ lista de docinhos de festa?
 """
 
 print('\nq2.')
-lista_frutas = ['banana', 'maca', 'pera', 'uva', 'acai', 'tapereba', 'caju', 'tucuma']
-lista_doces = ['brigadeiro', 'monteiro lopes', 'cajuzinho', 'uvinha', 'pacoca', 'coquinho']
-lista_ingredientes_feijoada = ['feijao preto', 'costela de porco', 'paio', 'pe de porco', 'linguica', 'orelha de porco', 'lombo de porco']
+lista_frutas = [
+    'banana',
+    'maca',
+    'pera',
+    'uva',
+    'acai',
+    'tapereba',
+    'caju',
+    'tucuma'
+]
+lista_doces = [
+    'monteiro lopes',
+    'cajuzinho',
+    'brigadeiro',
+    'uvinha', 'pacoca',
+    'coquinho'
+]
+lista_ingredientes_feijoada = [
+    'feijao preto',
+    'costela de porco',
+    'paio',
+    'pe de porco',
+    'linguica',
+    'orelha de porco',
+    'lombo de porco'
+]
 
-print('\na.')
+print('a.')
 listona = []
 listona.append(lista_frutas)
 listona.append(lista_doces)
@@ -41,23 +64,40 @@ print(f'lista para feijoada = {lista_ingredientes_feijoada}')
 print(f'listona = {listona}')
 
 print('\nb.')
+palavra_buscada = 'brigadeiro'
 elemento = None
-indice_listona = None
+indice = None
+indice_listinha = None
 for x in listona:
-	if 'brigadeiro' in x:
-		elemento = 'brigadeiro'
-		indice_listona = listona.index(x)
-print(elemento)
-#elemento = ('brigadeiro' if 'brigadeiro' in listona else None)
-indice = (lista_doces.index('brigadeiro') if elemento else None)
+    if palavra_buscada in x:
+        elemento = palavra_buscada
+        indice = x.index(elemento)
+        indice_listinha = listona.index(x)
 
-#print(f'{elemento} esta no indice {indice} da listona')
-print(indice)
+print(f'O {palavra_buscada} esta no indice {indice} do elemento de indice {indice_listinha} da listona')
+
+print('\nc.')
+listona[indice_listinha].append('brigadeiro')
+listona[indice_listinha].append('brigadeiro')
+listona[indice_listinha].append('brigadeiro')
+
+print(f'lista de doces = {lista_doces}')
+print('A lista de doces tambem foi alterada com a adicao de 3 brigadeiros na segunda lista de listona')
+
+print('\nd.')
+listona.append('refrigerante')
+listona.append('cerveja')
+listona.append('vodka')
+listona.append('rum')
+print(listona)
 
 """
 3. Utilizando o del, remova todos os elementos da lista criada anteriormente até a
 lista ficar vazia.
+"""
+print('\nq3.')
 
+"""
 4. Faça uma lista de compras do mês, não se esqueça de comprar produtos de limpeza e
 sorvete!
 Agora «vá ao mercado» e delete apenas os produtos de limpeza da lista.
