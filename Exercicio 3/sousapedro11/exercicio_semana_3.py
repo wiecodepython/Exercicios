@@ -117,6 +117,32 @@ print(f'Preço final = R${dolar_to_brl(total+iof, cotacao):.2f}')
 print('c.')
 print(f'Valor do IOF = R${dolar_to_brl(iof,cotacao):.2f}')
 
-print('STRINGS')
+print('\nSTRINGS')
+print('q1.')
+"""
+1 - Dada a frase Python é muito legal., use fatiamento para dar nome
+às variáveis contendo cada palavra. 
+"""
+frase = 'Python é muito legal.'
+print('Frase =', frase)
 
-print('LEITURA DO TECLADO')
+palavra1 = frase[:6]
+palavra2 = frase[7]
+palavra3 = frase[9:14]
+palavra4 = frase[15:-1]
+
+
+palavras = {
+	'palavra 1': palavra1,
+	'palavra 2': palavra2,
+	'palavra 3': palavra3,
+	'palavra 4': palavra4
+}
+
+print('PALAVRAS')
+for k, v in palavras.items():
+	print(f'{k} = {v}')
+
+
+
+print('\nLEITURA DO TECLADO')
