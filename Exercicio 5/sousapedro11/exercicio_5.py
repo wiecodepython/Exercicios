@@ -92,9 +92,14 @@ else:
 Faça um programa que pergunte a idade, o peso e quanto dormiu nas últimas 24 h para uma pessoa e diga se ela
 pode doar sangue ou não.
 """
-
-idade = int(input(''))
-
+print('\nq2.')
+idade = int(input('Informe sua idade: '))
+peso = float(input('Informe seu peso: '))
+horas_sono = float(input('Informe quantas horas de sono voce teve nas ultimas 24h: '))
+if idade >=16 and idade<=69 and peso>50 and horas_sono>6:
+	print('Voce pode doar sangue')
+else:
+	print('Voce nao pode ser doador')
 """
 3. Considere uma equação do segundo grau f (x) = a · x2 + b · x + c. A partir dos coeficientes, determine se a
 equação possui duas raízes reais, uma, ou se não possui.
