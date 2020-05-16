@@ -95,16 +95,34 @@ pode doar sangue ou não.
 print('\nq2.')
 idade = int(input('Informe sua idade: '))
 peso = float(input('Informe seu peso: '))
-horas_sono = float(input('Informe quantas horas de sono voce teve nas ultimas 24h: '))
-if idade >=16 and idade<=69 and peso>50 and horas_sono>6:
-	print('Voce pode doar sangue')
+horas_sono = float(
+    input('Informe quantas horas de sono voce teve nas ultimas 24h: '))
+if idade >= 16 and idade <= 69 and peso > 50 and horas_sono > 6:
+    print('Voce pode doar sangue')
 else:
-	print('Voce nao pode ser doador')
+    print('Voce nao pode ser doador')
+
 """
 3. Considere uma equação do segundo grau f (x) = a · x2 + b · x + c. A partir dos coeficientes, determine se a
 equação possui duas raízes reais, uma, ou se não possui.
 Dica: ∆ = b2 − 4 · a · c : se delta é maior que 0, possui duas raízes reais; se delta é 0, possui uma raiz; caso
 delta seja menor que 0, não possui raiz real
+"""
+print('\nq3')
+print('Solucionar uma eq de grau 2: a*x^2 + bx + c')
+a = float(input('Informe o valor de a: '))
+b = float(input('Informe o valor de b: '))
+c = float(input('Informe o valor de c: '))
+
+delta = (b**2 - 4*a*c)**(1/2)
+
+if delta == 0:
+    n = 1
+    x1 = x2 = -b/(2*a)
+
+print(f'A equacao {a}x^2 + {b}x + {c} possui {n} raiz(es): x1 = {x1}, x2 = {x2}')
+
+"""
 4. Leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado
 somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-
 se 5.
