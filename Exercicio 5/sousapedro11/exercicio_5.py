@@ -85,7 +85,7 @@ else:
     print(f'Os numeros {numero_1} e {numero_2} sao iguais')
 
 """
-2. Para doar sangue é necessário1 :
+2. Para doar sangue é necessário :
 • Ter entre 16 e 69 anos.
 • Pesar mais de 50 kg.
 • Estar descansado (ter dormido pelo menos 6 horas nas últimas 24 horas).
@@ -93,13 +93,40 @@ Faça um programa que pergunte a idade, o peso e quanto dormiu nas últimas 24 h
 pode doar sangue ou não.
 """
 print('\nq2.')
+def verificador(valor, min, max, msg:str ):
+	while valor<min or valor>max:
+		tipo = type(valor)
+		valor = input(f'{msg.capitalize()} invalida! Informe um valor entre {min} e {max}: ')
+		if isinstance(tipo, int):
+			valor = int(valor)
+		else:
+			valor = float(valor)
+	return valor
+
 idade = int(input('Informe sua idade: '))
+idade = verificador(idade, 1, 150, 'idade')
+
 peso = float(input('Informe seu peso: '))
+pseo = verificador(peso, 1, 1000, 'peso')
+
 horas_sono = float(input('Informe quantas horas de sono voce teve nas ultimas 24h: '))
-if idade >=16 and idade<=69 and peso>50 and horas_sono>6:
-	print('Voce pode doar sangue')
+horas_sono = verificador(horas_sono, 0, 24, 'horas de sono')
+
+bo_idade = idade>=16 and idade<=69
+bo_peso = peso>50
+bo_horas_sono = horas_sono>=6
+
+if bo_idade and bo_peso and bo_horas_sono:
+	print('\nVoce pode doar sangue')
 else:
-	print('Voce nao pode ser doador')
+	print('\nVoce nao pode ser doador')
+	if not bo_idade:
+		print(f'Idade ({idade}) fora do intervalo [16, 69] anos')
+	if not bo_peso:
+		print(f'Peso ({peso:.2f}) abaixo dos 51Kg')
+	if not bo_horas_sono:
+		print(f'Horas de sono ({horas_sono:.1f}) abaixo das 6h')
+
 """
 3. Considere uma equação do segundo grau f (x) = a · x2 + b · x + c. A partir dos coeficientes, determine se a
 equação possui duas raízes reais, uma, ou se não possui.
