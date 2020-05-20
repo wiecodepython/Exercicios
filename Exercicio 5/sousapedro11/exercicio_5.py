@@ -163,9 +163,22 @@ print(f'\nA equacao {a}x\u00b2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 els
 print(f'x1 = {x1}, x2 = {x2}')
 
 """
-4. Leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado
-somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-
-se 5.
+4. Leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este 
+deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja menor ou igual
+a 20, este deverá ser apresentado subtraindo-se 5.
+"""
+print('\nq4.')
+num_1 = float(input('Informe o primeiro numero: '))
+num_2 = float(input('Informe o segundo numero: '))
+soma = num_1 + num_2
+if soma > 20:
+	soma += 8
+	print(f'{num_1} + {num_2} + 8 = {soma}')
+else:
+	soma -= 5
+	print(f'{num_1} + {num_2} - 5 = {soma}')
+
+"""
 5. Leia um número e imprima a raiz quadrada do número caso ele seja positivo ou igual a zero e o quadrado do
 número caso ele seja negativo.
 6. Leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite um número fora
