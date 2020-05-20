@@ -145,16 +145,20 @@ delta = b**2 - 4*a*c
 if delta == 0:
 	n = 1
 	x1 = x2 = -b/(2*a)
+	str_raiz = 'raiz real'
 else:
 	n = 2
 	if delta > 0:
 		x1 = (-b+sqrt(delta))/(2*a)
 		x2 = (-b-sqrt(delta))/(2*a)
+		str_raiz = 'raizes reais'
 	else:
 		x1 = f'{-b/(2*a)} + {sqrt(-delta)/(2*a)}i'
 		x2 = f'{-b/(2*a)} - {sqrt(-delta)/(2*a)}i'
+		str_raiz = 'raizes complexas'
 
-print(f'A equacao {a}x^2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} raiz(es): x1 = {x1}, x2 = {x2}')
+print(f'A equacao {a}x^2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} {str_raiz}.')
+print(f'x1 = {x1}, x2 = {x2}')
 
 """
 4. Leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado
