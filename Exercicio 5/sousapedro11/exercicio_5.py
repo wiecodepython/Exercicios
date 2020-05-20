@@ -1,3 +1,4 @@
+from math import sqrt
 """
 Cap 11 - Dicionarios
 1. Faça um dicionário com as 5 pessoas mais perto de você, tendo o nome como chave e a cor da camisa que está
@@ -132,6 +133,30 @@ else:
 equação possui duas raízes reais, uma, ou se não possui.
 Dica: ∆ = b2 − 4 · a · c : se delta é maior que 0, possui duas raízes reais; se delta é 0, possui uma raiz; caso
 delta seja menor que 0, não possui raiz real
+"""
+print('\nq3')
+print('Solucionar uma eq de grau 2: a*x^2 + bx + c')
+a = float(input('Informe o valor de a: '))
+b = float(input('Informe o valor de b: '))
+c = float(input('Informe o valor de c: '))
+
+delta = b**2 - 4*a*c
+
+if delta == 0:
+	n = 1
+	x1 = x2 = -b/(2*a)
+else:
+	n = 2
+	if delta > 0:
+		x1 = (-b+sqrt(delta))/(2*a)
+		x2 = (-b-sqrt(delta))/(2*a)
+	else:
+		x1 = f'{-b/(2*a)} + {sqrt(-delta)/(2*a)}i'
+		x2 = f'{-b/(2*a)} - {sqrt(-delta)/(2*a)}i'
+
+print(f'A equacao {a}x^2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} raiz(es): x1 = {x1}, x2 = {x2}')
+
+"""
 4. Leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado
 somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-
 se 5.
@@ -139,5 +164,4 @@ se 5.
 número caso ele seja negativo.
 6. Leia um número inteiro entre 1 e 12 e escreva o mês correspondente. Caso o usuário digite um número fora
 desse intervalo, deverá aparecer uma mensagem informando que não existe mês com este número.
-
 """
