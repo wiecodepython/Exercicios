@@ -159,7 +159,7 @@ else:
 		x2 = f'{-b/(2*a)} - {sqrt(-delta)/(2*a)}i'
 		str_raiz = 'raizes complexas'
 
-print(f'A equacao {a}x\u00b2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} {str_raiz}.')
+print(f'\nA equacao {a}x\u00b2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} {str_raiz}.')
 print(f'x1 = {x1}, x2 = {x2}')
 
 """
