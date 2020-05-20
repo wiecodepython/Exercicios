@@ -135,10 +135,12 @@ Dica: ∆ = b2 − 4 · a · c : se delta é maior que 0, possui duas raízes re
 delta seja menor que 0, não possui raiz real
 """
 print('\nq3')
-print('Solucionar uma eq de grau 2: a*x^2 + bx + c')
-a = float(input('Informe o valor de a: '))
-b = float(input('Informe o valor de b: '))
-c = float(input('Informe o valor de c: '))
+print('Solucionar uma eq de grau 2: ax\u00b2 + bx + c')
+a = float(input('Informe o valor de \"a\": '))
+while a == 0:
+	a = float(input('Valor de \"a\" invalido!. Informe um valor nao nulo: '))
+b = float(input('Informe o valor de \"b\": '))
+c = float(input('Informe o valor de \"c\": '))
 
 delta = b**2 - 4*a*c
 
@@ -157,7 +159,7 @@ else:
 		x2 = f'{-b/(2*a)} - {sqrt(-delta)/(2*a)}i'
 		str_raiz = 'raizes complexas'
 
-print(f'A equacao {a}x^2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} {str_raiz}.')
+print(f'A equacao {a}x\u00b2 {("+" if b>0 else "") + str(b)}x {("+" if c>0 else "") + str(c)} possui {n} {str_raiz}.')
 print(f'x1 = {x1}, x2 = {x2}')
 
 """
