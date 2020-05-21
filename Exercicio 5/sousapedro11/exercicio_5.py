@@ -216,3 +216,115 @@ while mes<1 or mes>12:
 	mes = int(input('Nao existe mes correspondente a esse numero! Informe algum no intervalo de 1 a 12: '))
 
 print(f'Mes correspondente a {mes} = {mes_dict.get(mes)}')
+
+"""
+CAPITULO 14
+1. Calcule a tabuada do 13.
+"""
+print('\nCap 14')
+print('q1.')
+num = 13
+
+print(f'Tabuada do {num}')
+for i in range(1, 11):
+	print(f'{num} x {i} = {num*i}')
+
+"""
+2. Ler do teclado uma lista com 5 inteiros e imprimir o menor valor.
+"""
+def ler_lista(tamanho):
+	lista_num = []
+	for i in range(tamanho):
+		a = int(input(f'Informe o {i+1}\u00ba numero: '))
+		lista_num.append(a)
+	return lista_num
+
+print('\nq2.')
+lista = ler_lista(5)
+
+print('\nlista =', lista)
+print(f'Menor valor da lista: {min(lista)}')
+
+"""
+3. Ler do teclado uma lista com 5 inteiros e imprimir True se a lista estiver ordenada
+de forma crescente ou False caso contrário.
+"""
+print('\nq3.')
+lista = ler_lista(5)
+lista_aux = lista[:]
+lista_aux.sort()
+
+print('\nLista:',lista)
+print(f'Lista ordenada?: {lista==lista_aux}')
+
+"""
+4. Exiba em ordem decrescente todos os números de 500 até 10.
+"""
+print('\nq4.')
+print('Exibindo de 500 ate 10 em ordem decrescente')
+print(', '.join(str(i) for i in range(500, 9, -1)))
+
+"""
+5. Ler do teclado 10 números e imprima a quantidade de números entre 10 e 50.
+"""
+print('\nq5.')
+lista = ler_lista(10)
+contador = 0
+for i in lista:
+	if i>10 and i<50:
+		contador += 1
+
+print(f'Quantidade de numeros entre 10 e 50 (intervalo aberto): {contador}')
+
+"""
+6. Ler do teclado a idade e o sexo de 10 pessoas, calcule e imprima:
+a) idade média das mulheres
+b) idade média dos homens
+c) idade média do grupo
+"""
+print('\nq6.')
+lista = []
+for i in range(10):
+	pessoa = {}
+	print(f'Informe os dados da Pessoa {i+1}')
+	idade = int(input('Idade: '))
+	while idade<0 or idade>150:
+		idade = int(input('Idade invalida! Informe um valor no intervalo [0, 150]: '))
+	sexo = input('Sexo (M/F): ')
+	sexo = sexo.upper()
+	while sexo != 'M' and sexo != 'F':
+		sexo = input('Sexo invalido. Informe ou M ou F: ')
+		sexo = sexo.upper()
+		print(sexo)
+	print()
+	pessoa['id'] = f'Pessoa {i+1}'
+	pessoa['idade'] = idade
+	pessoa['sexo'] = sexo
+	lista.append(pessoa)
+
+mulheres = [x for x in lista if 'F' == x.get('sexo')]
+homens = [x for x in lista if 'M' == x.get('sexo')]
+media_mulheres = sum(m.get("idade") for m in mulheres)/len(mulheres) if len(mulheres)>0 else None
+media_homens = sum(h.get("idade") for h in homens)/len(homens) if len(homens)>0 else None
+
+print('mulheres = ', mulheres)
+print('homens = ', homens)
+print('\na.')
+print(f'Idade media das mulheres: {media_mulheres}')
+
+print('\nb.')
+print(f'Idade media dos homens: {media_homens}')
+
+print('\nc.')
+# print((media_homens + media_mulheres) / 2)
+print(f'Idade media do grupo: {sum(e.get("idade") for e in lista) / len(lista)}')
+
+"""
+7. Calcule o somatório dos números de 1 a 100 e imprima o resultado.
+"""
+print('\nq7.')
+n = 100
+soma = 0
+for i in range(1, n+1):
+	soma += i
+print(f'Soma dos numeros de 1 a 100: {soma}')
