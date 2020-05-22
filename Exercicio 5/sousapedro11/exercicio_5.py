@@ -1,8 +1,8 @@
 from math import sqrt
 """
 Cap 11 - Dicionarios
-1. Faça um dicionário com as 5 pessoas mais perto de você, tendo o nome como chave e a cor da camisa que está
-usando como valor.
+1. Faça um dicionário com as 5 pessoas mais perto de você, tendo o nome como chave e a
+cor da camisa que está usando como valor.
 """
 pessoas = {
     'Pedro': 'Azul',
@@ -18,9 +18,9 @@ print('q1.')
 print(f'Dicionario pessoas = {pessoas}')
 
 """
-2. Crie um dicionário vazio semana = {} e o complete com uma chave para cada dia da semana, tendo como
-seu valor uma lista com as aulas que você tem nesse dia (sábado e domingo recebem listas vazias, ou você tem
-aula?).
+2. Crie um dicionário vazio semana = {} e o complete com uma chave para cada dia da
+semana, tendo como seu valor uma lista com as aulas que você tem nesse dia (sábado e
+domingo recebem listas vazias, ou você tem aula?).
 """
 semana = {}
 semana.update(segunda=['OEM para análise de sistemas',
@@ -36,8 +36,9 @@ print('\nq2.')
 print(f'Dicionario semana = {semana}')
 
 """
-3. Crie um dicionário vazio filmes = {}. Utilize o nome de um filme como chave. E, como valor, outro
-dicionário contendo o vilão e o ano em que o filme foi lançado. Preencha 5 filmes.
+3. Crie um dicionário vazio filmes = {}. Utilize o nome de um filme como chave. E, como
+valor, outro dicionário contendo o vilão e o ano em que o filme foi lançado.
+Preencha 5 filmes.
 """
 filmes = {}
 filmes['O silencio dos inocentes'] = {
@@ -74,16 +75,15 @@ print('\nCAP 13')
 print('q1.')
 numero_1 = int(input('Informe o um número: '))
 numero_2 = int(input('Informe outro um número: '))
-menor = None
+while numero_2 == numero_1:
+	numero_2 = int(input('O numero nao pode ser igual ao primeiro! Informe outro numero: '))
+
 if numero_1 > numero_2:
     menor = numero_2
 elif numero_1 < numero_2:
     menor = numero_1
 
-if menor:
-    print(f'O menor numero entre {numero_1} e {numero_2} é: {menor}')
-else:
-    print(f'Os numeros {numero_1} e {numero_2} sao iguais')
+print(f'O menor numero entre {numero_1} e {numero_2} é: {menor}')
 
 """
 2. Para doar sangue é necessário :
@@ -129,10 +129,10 @@ else:
 		print(f'Horas de sono ({horas_sono:.1f}) abaixo das 6h')
 
 """
-3. Considere uma equação do segundo grau f (x) = a · x2 + b · x + c. A partir dos coeficientes, determine se a
-equação possui duas raízes reais, uma, ou se não possui.
-Dica: ∆ = b2 − 4 · a · c : se delta é maior que 0, possui duas raízes reais; se delta é 0, possui uma raiz; caso
-delta seja menor que 0, não possui raiz real
+3. Considere uma equação do segundo grau f (x) = a · x2 + b · x + c. A partir dos
+coeficientes, determine se a equação possui duas raízes reais, uma, ou se não possui.
+Dica: ∆ = b2 − 4 · a · c : se delta é maior que 0, possui duas raízes reais;
+se delta é 0, possui uma raiz; caso delta seja menor que 0, não possui raiz real
 """
 print('\nq3')
 print('Solucionar uma eq de grau 2: ax\u00b2 + bx + c')
@@ -316,7 +316,6 @@ print('\nb.')
 print(f'Idade media dos homens: {media_homens}')
 
 print('\nc.')
-# print((media_homens + media_mulheres) / 2)
 print(f'Idade media do grupo: {sum(e.get("idade") for e in lista) / len(lista)}')
 
 """
